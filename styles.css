@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background: #ffffffff;
+    font-family: Arial;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    flex-direction: row;
+}
+
+.menu{
+    max-width: 100%;
+    display: flex;
+    padding: 10%;
+    font-weight: bold;
+}
+
+/*Uso de selectores por clase*/
+.menu .logo{
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.menu .top-bar{
+    color: rgb(255, 255, 255, 0.8);
+    border: solid 8px rgb(0, 0, 0);
+    background: rgb(12, 12, 12);
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 40px;
+    margin: 0px 5px;
+}
+
+.menu .seach-bar{
+    width: 100% ;
+    margin: 0px 5px;
+    padding: 12px 35px;
+    border-radius: 40px;
+    outline: none;
+    position: relative;
+    background-color: rgba(168, 153, 153, 0.664);
+    font-size: 15px;
+    background-image:url("https://cdn-icons-png.flaticon.com/128/1786/1786987.png?track=ais") ;
+    background-size: 21px;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-position: 10px;
+}
+
+.menu .icon-bell{
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.menu .icon-message{
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.menu .icon-profil{
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.menu .icon-menu{
+    width: 25px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 25%;
+}
+
+.container{
+    display: flex;
+    padding: 5px;
+    flex-wrap: wrap;
+}
+
+.column{
+    flex: 25%;
+    padding: 5px;
+}
+
+.column img{
+    margin-top: 5 px;
+}
+
+.photo{
+    border-radius: 20px;
+    margin: 10px;
+    width: 250px;
+    height: 320px;
+}
+
+@media(max-width: 800px){
+    .column{
+        flex: 100%;
+    }
+}
+
+@media (max-width:600px){
+    .column{
+        flex: 100%;
+    }
+}
